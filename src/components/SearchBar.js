@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 export default class SearchBar extends React.Component {
-  state = { term: '' };
+  state = { term: "" };
 
   //? USED BY Sol 2 n 3  - onSubmit={this.onFormSubmit.bind(this)} and event => this.onFormSubmit(event)
   // onFormSubmit(e) {
@@ -10,6 +10,7 @@ export default class SearchBar extends React.Component {
   // }
 
   onFormSubmit = (e) => {
+    // console.log(process.env.REACT_APP_MY_API_KEY);
     e.preventDefault();
     this.props.onSearchSubmit(this.state.term);
   };
