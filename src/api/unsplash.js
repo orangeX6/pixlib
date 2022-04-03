@@ -1,7 +1,7 @@
-import axios from "axios";
+import axios from 'axios';
 
 export default axios.create({
-  baseURL: "https://api.unsplash.com",
+  baseURL: 'https://api.unsplash.com',
   headers: {
     Authorization: `Client-ID ${process.env.REACT_APP_MY_API_KEY}`,
   },

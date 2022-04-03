@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 export default class SearchBar extends React.Component {
-  state = { term: "" };
+  state = { term: '' };
 
   //? USED BY Sol 2 n 3  - onSubmit={this.onFormSubmit.bind(this)} and event => this.onFormSubmit(event)
   // onFormSubmit(e) {
