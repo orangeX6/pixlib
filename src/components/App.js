@@ -64,4 +64,11 @@ onSearchSubmit(term) {
 # API Keys
 config.js
 6. If you type in git status , you wont see see the config.js file included in your git snapshots
+
+
+#React Refs 
+>>  Get access to a single DOM element
+>>  We create refs in the constructor, assign them to instance variables, then pass to a particular JSX element as props
+
+
 */
