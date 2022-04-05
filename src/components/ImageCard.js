@@ -21,7 +21,6 @@ export default class ImageCard extends React.Component {
 
   setGridSpans = () => {
     const height = this?.imageRef?.current?.clientHeight;
-    // const height = this.imageRef.current.clientHeight;
     // if (!height) return;
     const spans = Math.ceil(height / 10);
     this.setState({ spans });
