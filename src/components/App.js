@@ -79,5 +79,6 @@ config.js
 >>  Get access to a single DOM element
 >>  We create refs in the constructor, assign them to instance variables, then pass to a particular JSX element as props
 
-
+// npm gh pages 
+npm install -g gh-pages --save-dev
 */
