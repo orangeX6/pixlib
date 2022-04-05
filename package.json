@@ -1,5 +1,6 @@
 {
   "name": "pixlib",
+  "homepage": "https://orangex6.github.io/pixlib/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
