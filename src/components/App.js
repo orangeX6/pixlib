@@ -14,7 +14,7 @@ class App extends React.Component {
       params: { query: term, page: page, per_page: 16 },
     });
 
-    console.log(response.config.params);
+    // console.log(response.config.params);
     this.setState({ images: response.data.results, currentPage: page });
   };
 
