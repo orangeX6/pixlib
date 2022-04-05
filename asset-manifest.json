@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pixlib/static/css/main.9f21d662.css",
+    "main.js": "/pixlib/static/js/main.22e886a8.js",
+    "index.html": "/pixlib/index.html",
+    "main.9f21d662.css.map": "/pixlib/static/css/main.9f21d662.css.map",
+    "main.22e886a8.js.map": "/pixlib/static/js/main.22e886a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f21d662.css",
+    "static/js/main.22e886a8.js"
+  ]
+}
