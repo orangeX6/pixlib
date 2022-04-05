@@ -9,7 +9,7 @@ const ImageList = (props) => {
 
   const handleSubmit = function (e) {
     e.preventDefault();
-    console.log(e.target);
+    // console.log(e.target);
     e.target.classList.contains('right')
       ? props.onSearchSubmit(props.term, props.page + 1)
       : props.page !== 1 && props.onSearchSubmit(props.term, props.page - 1);
