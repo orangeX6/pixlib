@@ -7,7 +7,29 @@ const ImageList = (props) => {
     return <ImageCard key={image.id} image={image} />;
   });
 
-  return <div className="image-list">{images}</div>;
+  const handleSubmit = function (e) {
+    e.preventDefault();
+    console.log(e.target);
+    e.target.classList.contains('right')
+      ? props.onSearchSubmit(props.term, props.page + 1)
+      : props.page !== 1 && props.onSearchSubmit(props.term, props.page - 1);
+  };
+
+  return (
+    <div className="image-div">
+      <div className="btn btn-left left">
+        <button className="ui icon button left" onClick={handleSubmit}>
+          <i className="left arrow icon"></i>
+        </button>
+      </div>
+      <div className="image-list">{images}</div>
+      <div className="btn btn-right right">
+        <button className="ui icon button right" onClick={handleSubmit}>
+          <i className="right arrow icon"></i>
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default ImageList;

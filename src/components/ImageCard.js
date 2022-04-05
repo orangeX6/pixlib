@@ -31,7 +31,13 @@ export default class ImageCard extends React.Component {
     const { alt_description: description, urls } = this.props.image;
 
     return (
-      <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
+      <div
+        style={{
+          gridRowEnd: `span ${this.state.spans}`,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}
+      >
         <img ref={this.imageRef} alt={description} src={urls.regular} />
       </div>
     );
